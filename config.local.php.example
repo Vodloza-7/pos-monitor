@@ -1,0 +1,9 @@
+<?php
+
+/* Copy this file to config.local.php and set the values for this installation. */
+define("MONITOR_DB_HOST", "localhost");
+define("MONITOR_DB_USER", "root");
+define("MONITOR_DB_PASSWORD", "");
+define("MONITOR_DB_NAME", "onpos");
+
+?>

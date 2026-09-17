@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS monitor_users (
+    ID INT NOT NULL AUTO_INCREMENT,
+    USERNAME VARCHAR(100) NOT NULL,
+    PASSWORD_HASH VARCHAR(255) NOT NULL,
+    FULL_NAME VARCHAR(150) NOT NULL,
+    ROLE VARCHAR(30) NOT NULL DEFAULT 'USER',
+    ACTIVE TINYINT(1) NOT NULL DEFAULT 1,
+    PRIMARY KEY (ID),
+    UNIQUE KEY unique_monitor_username (USERNAME)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- The POS-owned audittrail table is intentionally not created or changed here.
